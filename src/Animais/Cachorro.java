@@ -116,7 +116,7 @@ public class Cachorro extends Animal{
                 '}';
     }
     @Override
-    void soar() {
+    public void soar() {
         System.out.println("au au!");
     }
 }

@@ -1,6 +1,8 @@
+import Animais.Animal;
 import Animais.Cachorro;
 import Animais.Gatos;
 import Animais.Passaro;
+import Lojas.Petshop;
 
 public class Main {
 
@@ -16,6 +18,20 @@ public class Main {
         System.out.println(passaro1.toString());
         passaro1.soar();
         gato1.soar();
+        Petshop petshop = new Petshop();
+        petshop.darBanho(cachorro2);
+        System.out.println(cachorro2.getEstadoDeEspirito());
+
+        petshop.darBanho(gato1);
+        System.out.println(gato1.getEstadoDeEspirito());
+        petshop.tosar(cachorro1);
+        System.out.println(cachorro1.getEstadoDeEspirito());
+// sobre Polimorfismo
+        // bem complexo
+Gatos gato0= new Gatos ("Felix", "Branco", 8,"nada");
+Animal gato2 = new Gatos ("Felix", "Branco", 8,"nada");
+Animal animal4 = new Passaro ("Felix", "Branco", 8,"nada");
+
 
 
        //cachorro1.setNome("Nina");
